@@ -14,7 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 iris
 
 ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
-  geom_point() +
+  geom_point(color = "blue") +
+  labs(x = "Petal Length", y = "Petal Width", title = "Petal Width as a Function of Length")
   theme_classic()
 ```
 
