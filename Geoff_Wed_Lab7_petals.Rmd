@@ -9,3 +9,12 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+ library(tidyverse)
+iris
+
+ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point() +
+  theme_classic()
+```
+
